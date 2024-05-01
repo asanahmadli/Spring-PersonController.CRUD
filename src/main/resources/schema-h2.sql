@@ -9,3 +9,9 @@ PRIMARY KEY (ID));
 DROP SEQUENCE hibernate_sequence;
 
 CREATE SEQUENCE hibernate_sequence;
+
+--INSERT INTO countries (id, FIRST_NAME,LAST_NAME) VALUES (1, 'Test1','Test1');
+--INSERT INTO countries (id, FIRST_NAME,LAST_NAME) VALUES (2, 'Test2','Test2');
+--INSERT INTO countries (id, FIRST_NAME,LAST_NAME) VALUES (3, 'Test3','Test3');
+--INSERT INTO countries (id, FIRST_NAME,LAST_NAME) VALUES (4, 'Test4','Test4');
+--INSERT INTO countries (id, FIRST_NAME,LAST_NAME) VALUES (5, 'Test5','Test5');

@@ -1,11 +1,14 @@
-package io.zipcoder.crudapp;
+package io.zipcoder.crudapp.services;
 
 
+import io.zipcoder.crudapp.models.Person;
+import io.zipcoder.crudapp.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PersonService {
+
 
     private PersonRepository repository;
 
@@ -26,15 +29,12 @@ public class PersonService {
         return repository.save(person);
     }
 
-    public Person update(Long id, Person person){
-        Person updatePerson = repository.findOne(id);
-        updatePerson.setFirstName(person.getFirstName());
-        updatePerson.setLastName(person.getLastName());
-        return repository.save(updatePerson);
+    public Person update(Person person){
+        return repository.save(person);
     }
 
 
-    public Boolean delete(Long id){
+    public boolean delete(Long id){
         repository.delete(id);
         return true;
     }

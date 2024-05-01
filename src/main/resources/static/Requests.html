@@ -76,7 +76,7 @@ function postPerson(){
   // get values from fields
   var postFirstName = document.getElementById("postPersonFirstName").value;
   var postLastName = document.getElementById("postPersonLastName").value;
-  var URI = "http://localhost:8080/people/";
+  var URI = "http://localhost:8089/people/";
   var requestType = "POST";
 
   var postData = JSON.stringify({
@@ -150,7 +150,7 @@ xhr.send(putData);
 function getPerson(){
 
   var getId = document.getElementById("getPersonId").value;
-  var URI = "http://localhost:8080/people/" + getId;
+  var URI = "http://localhost:8089/people/" + getId;
   var requestType = "GET";
   var xhr = new XMLHttpRequest();
 
@@ -178,7 +178,7 @@ xhr.send(null);
 function getPeople(){
   // send GET /person request
   // update display with result
-  var URI = "http://localhost:8080/people/";
+  var URI = "http://localhost:8089/people/";
   var requestType = "GET";
 
   var xhr = new XMLHttpRequest();
@@ -203,7 +203,7 @@ xhr.send(null);
 function deletePerson(){
 
     var deleteId = document.getElementById("deletePersonId").value;
-    var URI = "http://localhost:8080/people/" + deleteId;
+    var URI = "http://localhost:8089/people/" + deleteId;
     var requestType = "DELETE";
     var xhr = new XMLHttpRequest();
 
